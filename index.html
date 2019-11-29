@@ -38,6 +38,9 @@
 		padding-top: 1%;
 		padding-bottom: 3%;
 	}
+	#video {
+		margin-top: 5%;
+	}
 	#goals {
 		margin-top: 5%;
 		margin-bottom: 5%;
@@ -120,12 +123,23 @@
 		display: none;
 	}
 
+	#vid {
+		width: 560px;
+		height: 315px;
+		margin: auto;
+	}
+
 	@media screen and (min-width: 770px) {
 		#desktopDownloads {
 			display: block;
 		}
 		#mobileDownloads {
 			display: none;
+		}
+		#vid {
+			width: 784px;
+			height: 441px;
+			margin: auto;
 		}
 	}
 
@@ -137,12 +151,11 @@
 
 	hr {
 		width: 60%;
-    border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: rgb(150,150,150); /* old IE */
-    background-color: rgb(150,150,150); /* Modern Browsers */
-
+	    border: none;
+	    height: 1px;
+	    /* Set the hr color */
+	    color: rgb(150,150,150); /* old IE */
+	    background-color: rgb(150,150,150); /* Modern Browsers */
 	}
 	
 </style>
@@ -189,6 +202,10 @@
 				</td>
 			</tr>
 		</table>	
+	</div>
+
+	<div id="video" class="container">
+		<iframe id="vid" src="https://www.youtube-nocookie.com/embed/qW2kVFS43lM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
 	<div id="goals" class="container">
